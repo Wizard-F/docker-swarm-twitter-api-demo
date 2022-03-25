@@ -1,0 +1,17 @@
+version: '3'
+services:
+  twitter-api-demo:
+    deploy:
+      replicas: 8
+      restart_policy:
+        condition: any
+      update_config:
+        parallelism: 2
+        delay: 15s
+    image: itsmyduty/twitter-api-demo
+    ports:
+      - 3000:3000
+    environment:
+      - PORT=3000
+      - jwtPrivateKey="1234"
+      - db="mongodb+srv://twitter-user:2019weifutao@cluster0.sao0d.mongodb.net/twitter?retryWrites=true&w=majority"
