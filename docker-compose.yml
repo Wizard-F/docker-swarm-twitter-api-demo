@@ -10,8 +10,8 @@ services:
         delay: 15s
     image: itsmyduty/twitter-api-demo
     ports:
-      - 3000:3000
+      - 3000:4000
     environment:
-      - PORT=3000
+      - PORT=4000
       - jwtPrivateKey="1234"
       - db="mongodb+srv://twitter-user:2019weifutao@cluster0.sao0d.mongodb.net/twitter?retryWrites=true&w=majority"
