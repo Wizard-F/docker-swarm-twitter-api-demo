@@ -14,4 +14,4 @@ services:
     environment:
       - PORT=4000
       - jwtPrivateKey="1234"
-      - db="mongodb+srv://twitter-user:2019weifutao@cluster0.sao0d.mongodb.net/twitter?retryWrites=true&w=majority"
+      - db=mongodb+srv://twitter-user:2019weifutao@cluster0.sao0d.mongodb.net/twitter?retryWrites=true&w=majority
